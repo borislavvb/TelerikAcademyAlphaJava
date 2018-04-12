@@ -21,7 +21,7 @@ public class Main {
         }else {
         System.out.println(superman.getLifePoints());
         }
-
+        System.out.println("heloo Giti miti");
     }
 
     public static boolean check(Superhero name){
