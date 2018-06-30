@@ -10,7 +10,7 @@ body, html{
 
 .pimg1, .pimg2, .pimg3{
     position: relative;
-    opacity: 0.70;
+    opacity: 1;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,10 +38,19 @@ body, html{
 }
 
 .section-light{
-    background-color: #f4f4f4;
-    color: #666;
+    background-color:#fff2f2;
+    color:black;
 }
 
+.section-dark{
+
+    background-color: #282e34;
+    color: #ddd;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
 
 .ptext{
     position: absolute;
