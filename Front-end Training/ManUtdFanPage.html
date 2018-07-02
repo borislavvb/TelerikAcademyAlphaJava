@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/players.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <header>
+        <nav id="nav">
+            <ul>
+                <li>History</li>
+                <li>Players</li>
+                <li>Gallery</li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="pimg1">
         <div class="ptext">
@@ -61,7 +74,7 @@
 
             </div>
             <div id="panel2" class="panel">
-                n October 1945, the impending resumption of football led to the managerial appointment of Matt Busby, who demanded an unprecedented
+                On October 1945, the impending resumption of football led to the managerial appointment of Matt Busby, who demanded an unprecedented
                 level of control over team selection, player transfers and training sessions. Busby led the team to second-place
                 league finishes in 1947, 1948 and 1949, and to FA Cup victory in 1948. In 1952, the club won the First Division,
                 its first league title for 41 years. With an average age of 22, the back-to-back title winning side of 1956
@@ -150,15 +163,37 @@
         </div>
     </div>
 
-    <section class="section section-dark">
+    <section class="players">
         <h2>Players</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, temporibus repellendus. Culpa quos quas, beatae
-            voluptates eos in quisquam quo deserunt ut ex incidunt asperiores nulla! Repudiandae aperiam hic laudantium officia
-            illum id expedita dolore voluptate beatae accusamus dignissimos harum pariatur mollitia, voluptatibus quasi voluptas
-            eveniet praesentium in saepe enim? Excepturi voluptas odio magnam quasi nam qui recusandae, quos officiis, nesciunt
-            debitis ratione atque, exercitationem delectus pariatur similique ex voluptatem laborum natus nostrum maxime
-            ut nemo sint reprehenderit.
-        </p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="deGea.jpg" alt="">
+                <div class="text">David De Gea - Goalkeeper</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="eric-bailly.jpg" alt="">
+                <div class="text">Erik Bailly - Central Defender</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="Antonio-valencia.jpg" alt="">
+                <div class="text">Antonio Valencia - Right Full-Back</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>            
+        </div>
+        <br>
+
+        <div class="dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
 
     <div class="pimg3">
@@ -171,19 +206,22 @@
 
     <section class="container">
         <h2>Gallery</h2>
-        <div class="slider-outer">
-            <img src="/images/arrow_left.png" class="prev">
-            <div class="slider-inner">
-                <img src="/images/images (3).jpg" class="active">
-                <img src="/images/images (4).jpg">
-                <img src="/images/images (5).jpg">
-                <img src="/images/images (6).jpg">
-                <img src="/images/images (7).jpg">
-                <img src="/images/images.jpg">
-                <img src="/images/images (1).jpg">
-                <img src="/images/images (2).jpg">
-            </div>
-            <img src="/images/arrow_right.png" class="next">
+        <div class="slider">
+            <figure>
+                <img src="img1.jpg" alt="">
+                <img src="img2.jpg" alt="">
+                <img src="img3.jpg" alt="">
+                <img src="img4.jpg" alt="">
+                <img src="37552899-manchester-united-hd-wallpapers.jpg" alt="">
+            </figure>
+
+            <button class="btn-prev">
+                <i class="fa fa-arrow-circle-left"></i>
+            </button>
+            <button class="btn-next">
+                <i class="fa fa-arrow-circle-right"></i>
+            </button>
+
         </div>
     </section>
 
@@ -197,6 +235,8 @@
 
     <script src="js/tabs.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/players.js"></script>
 </body>
 
 </html>

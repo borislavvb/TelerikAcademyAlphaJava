@@ -1,21 +1,15 @@
-$(document).ready(function(){
-    $('.next').on('click',function(){
-        var currentImg = $('.active');
-        var nextImg = currentImg.next();
+$(document).ready(function () {
+    var x = 0;
+    // for next slide
+    $('.btn-next').click(function () {
 
-        if(nextImg.lenght){
-            currentImg.removeClass('active').css('z-index',-10);
-            nextImg.addClass('active').css('z-index',10);
-        }
-    })
-})
+        x = (x <= 300) ? (x + 100) : 0;
+        $('figure').css('left', -x + '%');
+    });
+    // for prev slide
+    $('.btn-prev').click(function () {
 
-$('.next').on('click',function(){
-    var currentImg = $('.active');
-    var prevImg = currentImg.prev();
-
-    if(prevImg.lenght){
-        currentImg.removeClass('active').css('z-index',-10);
-        nextImg.addClass('active').css('z-index',10);
-    }
-})
+        x = (x >= 100) ? (x - 100) : 400;
+        $('figure').css('left', -x + '%');
+    });
+});
