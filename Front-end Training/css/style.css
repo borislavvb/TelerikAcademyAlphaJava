@@ -1,80 +1,70 @@
-body, html{
+body,
+html {
     height: 100%;
     margin: 0;
     font-size: 16px;
-    font-family:"Times New Roman", sans-serif;
+    font-family: "Times New Roman", sans-serif;
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
 }
 
-.pimg1, .pimg2, .pimg3{
+.pimg2,
+.pimg3 {
     position: relative;
     opacity: 1;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
-    background-attachment:fixed;
-}
-.pimg1{
-    background-image: url('../images/manchester-united-logo-main.jpg');
-    min-height: 100%;
+    background-attachment: fixed;
 }
 
-.pimg2{
+.pimg1 {
+    background-image: url('../images/manchester-united-logo-main.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.pimg2 {
     background-image: url('../images/Believe.jpg');
     min-height: 400px;
 }
 
-.pimg3{
+.pimg3 {
     background-image: url('../images/ryan-giggs-manchester-united-1080P-wallpaper-middle-size.jpg');
     min-height: 400px;
 }
 
-.section{
+.section {
     text-align: center;
     padding: 50px 80px;
     background-color: #fff2f2;
 }
 
-.section-light{
-    background-color:#fff2f2;
-    color:black;
+.section-light {
+    background-color: #fff2f2;
+    color: black;
     text-align: justify;
 }
 
-.section-dark{
-
-    background-color: #282e34;
-    color: #ddd;
-}
-.section-dark{
+.section-dark {
     background-color: #282e34;
     color: #ddd;
 }
 
-.ptext{
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-    font-size: 27px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-}
-
-.ptext .border trans{
-    background-color: #111;
-    color:#fff;
-    padding: 20px;
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
 }
 
 .tab-panels ul {
     margin: 0;
     padding: 0;
 }
+
 .tab-panels ul li {
     list-style-type: none;
     display: inline-block;
@@ -85,8 +75,8 @@ body, html{
     color: #fff;
     font-weight: 200;
     cursor: pointer;
-
 }
+
 .tab-panels ul li:hover {
     color: #fff;
     background: #666;
@@ -98,12 +88,12 @@ body, html{
 }
 
 .tab-panels .panel {
-    display:none;
+    display: none;
     background: #c9c9c9;
     padding: 30px;
     border-radius: 0 0 10px 10px;
 }
 
 .tab-panels .panel.active {
-    display:block;
+    display: block;
 }
