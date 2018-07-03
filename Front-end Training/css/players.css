@@ -1,4 +1,6 @@
 .players {
+    padding: 10px;
+    margin: 0;
     background-color: #fff2f2;
 }
 
@@ -20,13 +22,11 @@ h2 {
     width: 100%;
 }
 
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
-
 
 .prev,
 .next {
@@ -43,18 +43,15 @@ h2 {
     border-radius: 0 3px 3px 0;
 }
 
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 .text {
     font-weight: bold;
@@ -67,7 +64,6 @@ h2 {
     text-align: center;
 }
 
-
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -75,9 +71,6 @@ h2 {
     position: absolute;
     top: 0;
 }
-
-
-
 
 .fade {
     -webkit-animation-name: fade;
@@ -103,7 +96,6 @@ h2 {
         opacity: 1
     }
 }
-
 
 @media only screen and (max-width: 300px) {
     .prev,

@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
 
-    $('.tab-panels .tabs li').on('click', function() {
+    $('.tab-panels .tabs li').on('click', function () {
 
         var $panel = $(this).closest('.tab-panels');
 
@@ -17,7 +17,7 @@ $(function() {
         function showNextPanel() {
             $(this).removeClass('active');
 
-            $('#'+panelToShow).slideDown(300, function() {
+            $('#' + panelToShow).slideDown(300, function () {
                 $(this).addClass('active');
             });
         }

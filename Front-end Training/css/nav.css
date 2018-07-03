@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-.image{
-    background-image: url(../images/manchester-united-logo-main.jpg)
-}
-
 .container {
   width: 95%;
   max-width: 1000px;
@@ -11,7 +6,8 @@
 }
 
 header {
-  background: rgb(245, 221, 0);;
+  background: rgb(245, 221, 0);
+  ;
   color: rgb(212, 5, 5);
   padding: 1em 0;
   position: relative;
@@ -39,15 +35,14 @@ header::after {
   position: absolute;
   top: 100%;
   right: 0%;
-  background: rgb(245, 221, 0);;
+  background: rgb(245, 221, 0);
+  ;
   clip-path: circle(0px at top right);
   transition: clip-path ease-in-out 700ms;
-/*   display: none; */
 }
 
 .site-nav--open {
   clip-path: circle(250% at top right);
-/*   display: block; */
 }
 
 .site-nav ul {
@@ -75,7 +70,8 @@ header::after {
 .site-nav a:hover,
 .site-nav a:focus {
   background: rgb(212, 5, 5);
-  color: rgb(245, 221, 0);;
+  color: rgb(245, 221, 0);
+  ;
 }
 
 .site-nav--icon {
@@ -84,7 +80,7 @@ header::after {
   margin-right: 1em;
   width: 1.1em;
   text-align: right;
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
 }
 
 .menu-toggle {
@@ -128,11 +124,9 @@ header::after {
 }
 
 @media (min-width: 700px) {
-  
   .menu-toggle {
     display: none;
   }
-  
   .site-nav {
     height: auto;
     position: relative;
@@ -140,24 +134,19 @@ header::after {
     float: right;
     clip-path: initial;
   }
-  
   .site-nav li {
     display: inline-block;
     border: none;
   }
-  
   .site-nav a {
     padding: 0;
     margin-left: 3em;
   }
-  
   .site-nav a:hover,
   .site-nav a:focus {
     background: transparent;
   }
-  
   .site-nav--icon {
     display: none;
   }
-  
 }

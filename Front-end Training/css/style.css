@@ -10,7 +10,8 @@ html {
 }
 
 .pimg2,
-.pimg3 {
+.pimg3,
+.pimg4 {
     position: relative;
     opacity: 1;
     background-position: center;
@@ -30,12 +31,17 @@ html {
 
 .pimg2 {
     background-image: url('../images/Believe.jpg');
-    min-height: 400px;
+    min-height: 60%;
 }
 
 .pimg3 {
     background-image: url('../images/ryan-giggs-manchester-united-1080P-wallpaper-middle-size.jpg');
-    min-height: 400px;
+    min-height: 60%;
+}
+
+.pimg4 {
+    background-image: url('../images/img1.jpg');
+    min-height: 90%;
 }
 
 .section {
@@ -50,50 +56,47 @@ html {
     text-align: justify;
 }
 
-.section-dark {
-    background-color: #282e34;
-    color: #ddd;
+footer {
+    width: 100%;
+    background: rgb(212, 5, 5);
+    ;
+    border-top: 3px solid rgb(245, 221, 0);
+    color: rgb(245, 221, 0);
 }
 
-.section-dark {
-    background-color: #282e34;
-    color: #ddd;
+.footer-container {
+    width: 98%;
+    max-width: 1000px;
+    padding: 15px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -ms-align-item: center;
+    align-items: center;
 }
 
-.tab-panels ul {
-    margin: 0;
-    padding: 0;
+.footer-container .footer-main {
+    width: 70%;
 }
 
-.tab-panels ul li {
-    list-style-type: none;
+.footer-container .footer-links {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-container .footer-links a {
     display: inline-block;
-    background: #999;
-    margin: 0;
-    padding: 3px 10px;
-    border-radius: 10px 10px 0 0;
-    color: #fff;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-.tab-panels ul li:hover {
-    color: #fff;
-    background: #666;
-}
-
-.tab-panels ul li.active {
-    color: #fff;
-    background: #666;
-}
-
-.tab-panels .panel {
-    display: none;
-    background: #c9c9c9;
-    padding: 30px;
-    border-radius: 0 0 10px 10px;
-}
-
-.tab-panels .panel.active {
-    display: block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgb(212, 5, 5);
+    ;
+    color: rgb(245, 221, 0);
+    ;
+    text-align: center;
 }
